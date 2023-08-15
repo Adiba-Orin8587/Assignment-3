@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer data-aos="flip-down" data-aos-duration="1000" className='bg-black'>
-            <div className='container pt-5 mt-5'>
+        <footer className='bg-black'>
+            <div data-aos="flip-up" data-aos-duration="1000" className='container pt-5 mt-5'>
                 <div className='row row-cols-1 row-cols-md-1 row-cols-lg-5 py-5'>
                     <div className='text-white'>
                         <h5 className='fw-medium py-4'>Quick Order</h5>
