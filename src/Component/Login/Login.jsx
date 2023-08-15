@@ -1,71 +1,50 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import app from '../../Firebase/firebase.init'
-import { Link } from 'react-router-dom';
-import './Login.css'
-
-const auth = getAuth(app)
-
+import React, { useContext } from 'react';
+import { AuthContext } from '../../Context/UserContext';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
+    const { signIn } = useContext(AuthContext)
+    const navigate = useNavigate()
 
-    const [success, setSuccess] = useState(false)
 
-    const handleOnSubmit = event => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        setSuccess(false)
-
-
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-
-
-
-        signInWithEmailAndPassword(auth, email, password)
+        // console.log(email, password);
+        signIn(email, password)
             .then(result => {
-                const user = result.user;
+                const user = result.user
                 console.log(user);
-                setSuccess(true)
                 form.reset()
+                navigate('/')
             })
-
             .catch(error => {
                 console.log('error', error);
-
             })
 
-
     }
-
-
     return (
-        <div className='register login'>
-            <form onSubmit={handleOnSubmit}>
-                <h3 className='mb-4 py-2'>Please Login</h3>
+        <div >
+            <form onSubmit={handleSubmit} className='w-50 my-5 shadow
+        p-5 mx-auto fw-semibold '>
+                <h4>Please login</h4>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label text-secondary">Email address</label>
+                    <input type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
 
-                <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                    <input type="email" placeholder='Email' name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" className="form-text"></div>
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                    <input type="password" placeholder='Password' name='password' className="form-control" id="exampleInputPassword1" />
-                </div>
+                <div className="mb-3" >
+                    <label htmlFor="exampleInputPassword1" className="form-label text-secondary">Password</label>
+                    <input type="password" name='password' className="form-control" id="exampleInputPassword1" />
+                </div >
 
                 <button type="submit" className="btn btn-primary">Login</button>
-
-                {
-                    success && <p className='text-success py-3'>
-                        Login Successfully
-                    </p>
-                }
-            </form>
-
-        </div>
+            </form >
+        </div >
     );
 };
 

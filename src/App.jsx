@@ -1,12 +1,13 @@
 import './App.css'
+import 'animate.css';
 import Main from './Layout/Main'
 import Home from './Component/Home/Home'
 import Cart from './Component/Cart/Cart'
-import Order from './Component/Order/Order'
 import Registration from './Component/Registration/Registration'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Product from './Component/Product/Product'
 import Login from './Component/Login/Login'
+import About from './Component/About/About'
 
 function App() {
 
@@ -23,8 +24,8 @@ function App() {
           }
         },
         {
-          path: '/order',
-          element: <Order></Order>,
+          path: '/about',
+          element: <About></About>,
         },
         {
           path: '/cart',

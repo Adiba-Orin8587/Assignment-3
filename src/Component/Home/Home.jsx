@@ -15,18 +15,16 @@ const Home = () => {
                 <Carousel.Item >
                     <Carousel.Caption >
                         <div className='carousel-caption text-start'>
-                            <p>SEE THE LATEST</p>
-                            <h1 className='fw-semibold font col-6 pt-2 pb-3 '>Best Seller in Women's Clothing</h1>
-                            <p className='col-5 ph'>The latest drops from our Holiday 2023 collection are chic and funtional. </p>
+                            <p className='animate__fadeInLeft animate__animated animate__slow'>SEE THE LATEST</p>
+                            <h1 className='fw-semibold font col-6 pt-2 pb-3 animate__backInLeft animate__animated animate__slow'>Best Seller in Women's Clothing</h1>
+                            <p className='col-5 ph animate__fadeInRight animate__animated animate__slow'>The latest drops from our Holiday 2023 collection are chic and funtional. </p>
                             <Link to='/registration' className=''>
                                 <button className='border-0 fs my-4  py-3 px-4'>
                                     Shop now <FontAwesomeIcon className=' w-10 ms-2 icon' icon={faChevronRight} />
                                 </button></Link>
                         </div>
                     </Carousel.Caption>
-                    <img
-                        className="d-block slide"
-                        src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691836697/home-1_scbv9p.png
+                    <img data-aos="fade-up" data-aos-duration="1000" className="d-block slide animate__fadeInUp animate__animated animate__fast" src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691836697/home-1_scbv9p.png
                           "
                         alt="First slide" />
                 </Carousel.Item>
@@ -34,9 +32,9 @@ const Home = () => {
                     <div className='flex'>
                         <Carousel.Caption >
                             <div className='carousel-caption text-start'>
-                                <p>REFRESH YOUR STYLE</p>
-                                <h1 className='fw-semibold font col-6 pt-2 pb-3'>Romantic Style Inspiration</h1>
-                                <p className='col-5 ph'> Unbox Your Style With your personal shopper</p>
+                                <p className='animate__fadeInLeft animate__animated animate__slow'>REFRESH YOUR STYLE</p>
+                                <h1 className='fw-semibold font col-6 pt-2 pb-3 animate__backInLeft animate__animated animate__fast'>Romantic Style Inspiration</h1>
+                                <p className='col-5 ph animate__fadeInRight animate__animated animate__slow'> Unbox Your Style With your personal shopper</p>
                                 <Link to='/registration' className=''>
                                     <button className='border-0 fs my-4  py-3 px-4'>
                                         Shop now <FontAwesomeIcon className=' w-10 ms-2 icon' icon={faChevronRight} />
@@ -44,7 +42,7 @@ const Home = () => {
                             </div>
                         </Carousel.Caption>
                         <img
-                            className="d-block slide-1"
+                            className="d-block slide-1 animate__fadeInUp animate__animated animate__fast"
                             src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691777336/body-home_maghoa.png"
                             alt="Second slide"
                         />
@@ -54,9 +52,9 @@ const Home = () => {
                     <div className='flex'>
                         <Carousel.Caption >
                             <div className='carousel-caption text-start'>
-                                <p>SAVE 50% OFF</p>
-                                <h1 className='fw-semibold font col-8 pt-2 pb-3'>Shop For Men's Fashion</h1>
-                                <p className='col-5 ph'>Discover the latest trends in Men fashion</p>
+                                <p className='animate__fadeInLeft animate__animated animate__slow'>SAVE 50% OFF</p>
+                                <h1 className='fw-semibold font col-8 pt-2 pb-3 animate__backInLeft animate__animated animate__fast'>Shop For Men's Fashion</h1>
+                                <p className='col-5 ph animate__fadeInRight animate__animated animate__slow'>Discover the latest trends in Men fashion</p>
                                 <Link to='/registration' className=''>
                                     <button className='border-0 fs my-4  py-3 px-4'>
                                         Shop now <FontAwesomeIcon className=' w-10 ms-2 icon' icon={faChevronRight} />
@@ -64,7 +62,7 @@ const Home = () => {
                             </div>
                         </Carousel.Caption>
                         <img
-                            className="d-block slide-2"
+                            className="d-block slide-2 animate__fadeInUp animate__animated animate__fast"
                             src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691839636/home-3_h8zo6a.png"
                             alt="Third slide"
                         />
@@ -74,14 +72,14 @@ const Home = () => {
 
             {/* // ------Section-2------- */}
             <section className='container mt-5 py-5'>
-                <div className='my-5'>
-                    <p className='p p22'>SPRING 2023 | <br />
+                <div className='my-5' >
+                    <p className='p p22 animate__lightSpeedInLeft animate__animated animate__slower'>SPRING 2023 | <br />
                         NEW IN <span className='fs-2 col-4 m-2 text-black'>New Collection Ready to Wear</span> </p>
                     <div className="row flexh align-items-center">
                         <div className="sm:col-12 md:col-6">
                             <div className="row flexh align-items-center">
                                 <div className="col">
-                                    <div className="category text-center py-4 rounded sec-1">
+                                    <div className="category text-center py-4 rounded sec-1 animate__zoomIn animate__animated animate__slower">
                                         <div className='flex ps'>
                                             <p className='pe-5  me-5'>Women's clothing</p>
                                             <p className='ps-5  ms-5'>5 products</p>
@@ -89,14 +87,14 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="col">
-                                    <div className="category text-center py-4 rounded mb-4 sec-3">
+                                    <div className="category text-center py-4 rounded mb-4 sec-3 animate__zoomIn animate__animated animate__slower">
                                         <div className='flex pss'>
                                             <p className='pe-5  me-5'>Men's clothing</p>
                                             <p className='ps-5  ms-5'>5 products</p>
                                         </div>
                                     </div>
                                     <div>
-                                        <p className='p p32 mt-5'>SPRING 2023 |
+                                        <p className='p p32 mt-5 animate__lightSpeedInRight animate__animated animate__slower'>SPRING 2023 |
                                             <br />
                                             <span className='my-3 text-black fw-semibold text-end'>  Discover more For our Products</span>
                                             <br /> <Link className='none'>
@@ -107,7 +105,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-6">
-                            <div className='sec-2'>
+                            <div className='sec-2 animate__zoomIn animate__animated animate__slower'>
                             </div>
                         </div>
                     </div>
@@ -117,8 +115,9 @@ const Home = () => {
 
 
             {/* // ------Section-3------- */}
-            <div className='my-4 bg'>
-                <section className='container my-4'>
+            <div className='mt-4 bg'>
+                <section data-aos="zoom-in"
+                    data-aos-duration="2000" className='container mt-4'>
                     <div className='row row-cols-2 row-cols-md-2 row-cols-lg-4 my-5 py-5'>
                         <div className='text-center'>
                             <FontAwesomeIcon className=' w-10 ms-2 icons' icon={faShippingFast} />
@@ -152,9 +151,71 @@ const Home = () => {
                 </section>
             </div>
 
-            <section className='container py-5 my-5'>
+            {/* section-4 */}
+            <div className='mt-0'>
+                <div className='row row-cols-md-2 row-cols-1 g-0 '>
+                    <div className='gs text-center'>
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000" className='gsss' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1692102474/h1-banner04_eib9sc.jpg" alt="" />
+                    </div>
+                    <div className=''>
+                        <div className='container'>
+                            <div data-aos="zoom-in-left" data-aos-duration="2000" className="col  gs-1">
+                                <h4 className='text-secondary fw-bold text-center py-2'>New Arrival</h4>
+                                <div className="card border-0">
+                                    <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762057/foot_ring_hzhi1e.jpg" className="card-img-top er" alt="..." />
+                                    <div className="card-body border-0">
+                                        <h6 className="card-title text-secondary">Accessories / Kids</h6>
+                                        <h3>Beautiful Ornaments</h3>
+                                        <p className="card-text">Price:$88.17</p>
+                                        <p className="card-text text-secondary">Price:<del>$98.17</del></p>
+                                        <Link to='/registration' className=''>
+                                            <button className='border-0 fs my-4  py-3 px-4'>
+                                                Shop now
+                                                <FontAwesomeIcon className=' w-10 ms-2 icon' icon={faChevronRight} />
+                                            </button></Link>
+                                    </div>
+                                </div>
+                            </div></div>
+                    </div>
+                </div>
+                <div className='row row-cols-md-2 row-cols-1 g-0 '>
+                    <div className=''>
+                        <div className='container'>
+                            <div data-aos="zoom-in-left" data-aos-duration="2000" className="col gs-1">
+                                <h4 className='text-secondary fw-bold text-center py-2'>New Arrival</h4>
+                                <div className="card border-0">
+                                    <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762064/pink_txh00b.jpg" className="card-img-top" alt="..." />
+                                    <div className="card-body border-0">
+                                        <h6 className="card-title text-secondary">Accessories / Kids</h6>
+                                        <h3>Rustic Floral Heel</h3>
+                                        <p className="card-text">Price:$88.17</p>
+                                        <p className="card-text text-secondary">Price:<del>$98.17</del></p>
+                                        <Link to='/registration' className=''>
+                                            <button className='border-0 fs my-4  py-3 px-4'>
+                                                Shop now
+                                                <FontAwesomeIcon className=' w-10 ms-2 icon' icon={faChevronRight} />
+                                            </button></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='gss text-center'>
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000" className='gsss' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1692103005/h1-banner05_wgdp42.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section className='container p-5 my-5 borders rounded'>
+                <h2 data-aos="fade-left" data-aos-duration="2000" className='text-center py-3 fw-semibold co'>Our Collection</h2>
+                <div className='cspan text-center mb-5'></div>
                 <div className='row row-cols-md-3 row-cols-1 g-2'>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col  ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762071/white_shoes_ulztt1.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -170,7 +231,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762092/red_dress_zk0zbw.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -186,7 +247,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card cr border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762091/heels_igqk8v.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -202,7 +263,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762072/white_k7k9lo.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -218,7 +279,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762057/glass_mn8hby.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -234,7 +295,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762057/foot_ring_hzhi1e.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -250,7 +311,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762064/pink_txh00b.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -266,7 +327,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762058/green_hai4io.jpg" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -282,7 +343,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div data-aos="flip-left" data-aos-duration="2000" className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762051/earring_xj8smx.webp" className="card-img-top" alt="..." />
                             <div className="card-body border-0">
@@ -298,27 +359,29 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+
+                    <Link to='./product'><button className='border-0 fs my-4 bg-black text-white rounded  py-3 px-5 ms-2'>See all<FontAwesomeIcon className=' w-10 ms-2 icon' icon={faChevronRight} /></button></Link>
                 </div>
 
             </section>
             <section>
                 <div className='my-4 bg'>
-                    <section className='container my-4'>
+                    <section className='container my-4 '>
                         <div className='row row-cols-2 row-cols-md-2 row-cols-lg-5 my-5 py-5'>
                             <div >
-                                <img className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand01_adzpih.svg" alt="" />
+                                <img data-aos="zoom-out-right" data-aos-duration="2000" className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand01_adzpih.svg" alt="" />
                             </div>
                             <div >
-                                <img className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862866/brand03_v5hexz.svg" alt="" />
+                                <img data-aos="zoom-out-right" data-aos-duration="2000" className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862866/brand03_v5hexz.svg" alt="" />
                             </div>
                             <div>
-                                <img className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand05_vly68n.svg" alt="" />
+                                <img data-aos="zoom-out-down" data-aos-duration="2000" className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand05_vly68n.svg" alt="" />
                             </div>
                             <div>
-                                <img className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand06_yaya2h.svg" alt="" />
+                                <img data-aos="zoom-out-left" data-aos-duration="2000" className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand06_yaya2h.svg" alt="" />
                             </div>
                             <div>
-                                <img className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand02_pfcgwh.svg" alt="" />
+                                <img data-aos="zoom-out-left" data-aos-duration="2000" className='br' src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691862865/brand02_pfcgwh.svg" alt="" />
                             </div>
 
                         </div>
@@ -327,9 +390,10 @@ const Home = () => {
             </section>
 
             <section className='container my-5 py-5'>
-                <h1 className='pt-3 text-center'>Latest From Blog</h1>
-                <p className='py-1 fw-semibold text-secondary text-center'>Subscribe for latest news and blog updates from our editor. </p>
-                <div className='row row-cols-md-3 row-cols-1'>
+                <h1 data-aos="fade-right" data-aos-duration="1000" className='pt-3 text-center'>Latest From Blog</h1>
+                <p data-aos="fade-left" data-aos-duration="1000" className='py-1 fw-semibold text-secondary text-center'>Subscribe for latest news and blog updates from our editor. </p>
+                <div data-aos="fade-up"
+                    data-aos-duration="3000" className='row row-cols-md-3 row-cols-1'>
                     <div className="col ">
                         <div className="card border-0">
                             <img src="https://res.cloudinary.com/dpc7vvoqg/image/upload/v1691762093/sec-1_h6kiry.jpg" className="card-img-top" alt="..." />
@@ -396,7 +460,7 @@ const Home = () => {
             </section>
 
 
-        </div>
+        </div >
 
 
     );

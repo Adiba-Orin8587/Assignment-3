@@ -4,7 +4,7 @@ import React from 'react';
 const Cart = () => {
     return (
         <div>
-         <h2>Cart</h2>   
+            <h1 className='text-center'>This page is currenty Empty </h1>
         </div>
     );
 };

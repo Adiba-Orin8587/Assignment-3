@@ -12,7 +12,7 @@ const EachProduct = ({ product }) => {
     return (
         <div>
             <div className='container  my-5'>
-                <div className="col ">
+                <div  className="col " >
                     <div className="card border-0">
                         <img src={img} className="card-img-top" alt="..." />
                         <div className="card-body border-0">

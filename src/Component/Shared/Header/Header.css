@@ -6,18 +6,28 @@
     align-items: center;
 }
 
-.text-none:hover{
+.text-none:hover {
     color: #ff877b;
 }
 
 .icon {
     width: 10px;
 }
-.icon-1:hover{
+
+.icon-1:hover {
     color: #ff877b;
 }
 
-nav{
+nav {
     background-color: rgb(250, 250, 250);
 
+}
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1020;
+    right: 0;
+    left: 0;
 }

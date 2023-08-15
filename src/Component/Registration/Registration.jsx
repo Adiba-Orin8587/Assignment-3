@@ -46,9 +46,10 @@ const registration = () => {
                     <label htmlFor="exampleInputPassword1" className="form-label text-secondary">Password</label>
                     <input type="password" name='password' className="form-control" id="exampleInputPassword1" />
                 </div >
-
-                <Link to='./login'><button type="submit" className="btn btn-primary">Register</button></Link>
-        </form >
+                <Link to='/registration/login'>
+                    <button type="submit" className="btn btn-primary">Register</button>
+                </Link>
+            </form >
         </div >
     );
 };

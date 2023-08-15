@@ -18,10 +18,38 @@
 .carousel-caption {
     margin-left: -10%;
     top: 18%;
+    z-index: 100;
 }
 
 .font {
     font-size: 60px;
+
+}
+
+.gs {
+    background-image: url(https://res.cloudinary.com/dpc7vvoqg/image/upload/v1692102451/sh-2_o7wtrd.png);
+    background-color: rgb(253, 242, 227);
+    padding: 5%;
+}
+
+.gs-1 {
+    width: 74%;
+    padding-left: 21%;
+    margin: 12%;
+}
+
+
+
+.gss {
+    background-image: url(https://res.cloudinary.com/dpc7vvoqg/image/upload/v1692102451/shape_o3iwev.png);
+    background-repeat: no-repeat;
+    background-color: rgb(252, 230, 233);
+    padding: 5%;
+}
+
+.gsss {
+    border-top-left-radius: 350px;
+    border-top-right-radius: 350px;
 }
 
 .icon {

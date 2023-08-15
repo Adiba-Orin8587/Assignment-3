@@ -10,7 +10,7 @@ import Logo from '../../../assets/image/Logo.svg'
 const Header = () => {
     return (
         <header>
-            <Navbar expand="lg" className="bg-body-tertiary justify-content-around">
+            <Navbar expand="lg" className="bg-body-tertiary justify-content-around sticky-top">
                 <Container>
                     <Navbar.Brand to="/">
                         <img className='pe-5' src={Logo} alt="" />
